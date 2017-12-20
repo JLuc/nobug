@@ -118,9 +118,9 @@ if (!function_exists('nobug_handle_error'))
 		$file = $last_error['file'];
 		$line = $last_error['line'];
 
-		// SPIP génère des warning a gogo en  ligne 160 pour des unlink(tmp/cache/chemin.txt.150423698051368adb8c76d0.61673793): No such file or directory
+		// SPIP génère des warning a gogo en ligne 160 SPIP2.1 pour des unlink(tmp/cache/chemin.txt.150423698051368adb8c76d0.61673793): No such file or directory
 		if (strpos( $last_error['file'], 'flock.php')
-			or strpos( $last_error['file'], 'textwheel')) // textwheel est un ringard aussi
+			or strpos( $last_error['file'], 'textwheel')) // textwheel génère trop d'avertissements aussi
 			return;
 
 		switch ($type = $last_error['type']) {
