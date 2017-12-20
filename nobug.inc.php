@@ -23,7 +23,10 @@ function nobug_log ($chaine, $filename='_nobug', $avec_stack=false) {
 	spip_log ($chaine, "$filename."._LOG_CRITIQUE);
 }
 
-// asserts logés
+//
+// Déclaration d'une contrainte (lors du codage) 
+// et vérification (lors de l'exécution) du bon respect de la contrainte exprimée.
+//
 function nobug_assert ($test, $message, $filename='assert') {
 static $triggered=false;
 	if (!$test and !$triggered) {
