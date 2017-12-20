@@ -1,7 +1,9 @@
 <?php
 
 //=====================================================================
-// Outils de debug et prévention des accidents
+// Outils de testing, debug et prévention des accidents
+//
+// cf doc https://github.com/JLuc/nobug
 //
 
 // Nb de lignes à loger lors d'une erreur php (ou d'un warning ou d'une notice etc)
