@@ -16,5 +16,7 @@ function nobug_array_objet_spip ($a, $ctx='') {
   // tester que $a['objet'] est bien une table spip déclarée
   // tester que l'objet $id_objet existe bien...  
   )
-    or nobug_assert (false, "Valeur actuelle : print_r($a,1));
+    or nobug_assert (false, "Valeur actuelle : print_r($a,1))
+    or return false;
+  return true;
 }
