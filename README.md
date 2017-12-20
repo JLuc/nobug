@@ -1,2 +1,16 @@
 # nobug
-Librairie de testing, debug et controle de qualité
+
+#### Librairie de testing, debug et controle de qualité
+- facile à utiliser car elle ne nécessite pas de devs "à part"
+- tests automatiques et permanents ensuite, en tâche de fond
+
+Cette librairie invite à expliciter le savoir implicite du dev sur un contexte PHP donné, sous la forme de contraintes assertives exprimées au sein même du code.
+
+Lors du fonctionnement normal du code, ces déclarations permettent de s'assurer que le contexte d'exécution est conforme aux contraintes exprimées, et que les résultats sont conformes aux attentes.
+
+Si ce n'est pas le cas, des logs sont générés, détaillant la pile d'exécution ainsi que le contexte du source PHP incriminé.
+
+L'essentiel tient en 20 lignes.
+
+La fonction principale est `debug_assert` : déclaration d'une contrainte (lors du codage) et vérification (lors de l'exécution) du bon respect de la contrainte exprimée.
+
