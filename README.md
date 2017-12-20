@@ -14,6 +14,6 @@ L'essentiel tient en 20 lignes.
 
 La fonction principale est `debug_assert` : déclaration d'une contrainte (lors du codage) et vérification (lors de l'exécution) du bon respect de la contrainte exprimée.
 
-Quand le code est au point, il ne doit y avoit aucune détection. Si ensuite le code d'une partie de code évolue, les assertions permettront de s'assurer que les contraintes décrivant les zones de bon fonctionnement des différentes fonctions restent bien respectées.
+Quand le code est au point, il ne doit y avoit aucune détection. Si ensuite une partie locale du code évolue, les assertions permettront de s'assurer que les contraintes décrivant les zones de bon fonctionnement des différentes fonctions restent bien respectées dans l'ensemble du projet.
 
-La librairie `nobug` peut être utilisée sur tout projet PHP, mais n'a été, intensément, utilisée que sur des projets SPIP 2 et SPIP 3.
+La librairie `nobug` peut être utilisée sur tout projet PHP, mais n'a été utilisée, intensément, que sur des projets SPIP 2 et SPIP 3.
