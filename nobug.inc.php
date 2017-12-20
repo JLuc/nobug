@@ -163,8 +163,7 @@ if (!function_exists('nobug_handle_error'))
 		};
 
 		if (($type == E_ERROR)
-			or (strpos($file, '/paeco/')!==false)
-			or (strpos($file, '/toscribus/')!==false))
+			or (strpos($file, '/plugins/')!==false))
 			// Inutile d'insérer la stack ici car php est sorti de la stack now
 			nobug_log (print_r($last_error, true).$tobeloged, $logfile);
 		else
